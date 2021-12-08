@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+       <meta charset="utf-8">
+       <title >Assignment 3</title>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	   <!-- minified CSS -->
+	   
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	</head>
+    <style>
+	   h1, h2, h3, h4, h5, p, figcaption{
+	    text-align: center;
+	   }
+	   img {
+            display: grid;
+            margin-left: auto;
+            margin-right: auto;
+        }
+		.rounded-circle{
+            width: 150px;
+            height: 150px;
+            padding: 15px;
+        }
+      .sqaure{
+            width: 350px;
+            height: 150px;
+           
+        }
+		#option{
+		    display: flex;
+			flex-direction: row;
+			
+		}
+		.menu{
+            border-radius: 45px;
+            background-color: orange;
+            color:white;
+        }
+		#subjects{
+		
+            margin-left: auto;
+            margin-right: auto;
+        }
+     @media screen and (min-width:1000px){
+        .container{
+            width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        
+        }
+		
+	  }
+	 @media screen and (min-width:400px){
+        .container{
+            
+            margin-left: auto;
+            margin-right: auto;
+        
+        }	
+		
+	  }
+		
+    </style>
+	 
+	<body>
+	<div class="container">
+	   
+	 <header>
+	 <div class="row">
+	 <nav class="box option" id="option"> 
+		
+	    <div class="menu"><a href="main.html">    Intro </a></div>
+	    <div class="menu"><a href="selling.html"> Education </a></div> 
+	    <div class="menu"><a href="buying.html">  Skills  </a></div> 
+        <div class="menu"><a href="contact.html"> Courses  </a></div> 
+	    <div class="menu"><a href="about.html">  Work  </a></div> 
+	   </nav>
+	 <h1>[ Shawn Tian ]</h1>
+	 
+     <p> | 225 panatella Sq NW | Calgary, AB | 587-968-6298 | xtian648@mtroyal.ca | </p>
+     <hr> 
+	  <div class=" col-sm-3 col-md-3 col-lg-3" > <img class="rounded-circle" src="images/kumamon-2.jpg" alt="proflie"> </div>
+      <div class=" col-sm-3 col-md-3 col-lg-3"> <img class="rounded-circle"  src="images/RWibk.jpg" alt="zoo"> </div>
+	 
+	 <h2> Introduction </h2>
+	   <p> 
+	     Greetings everyone, my name is Shawn Tian, A student from Mount Royal University currently studying the bachelor of computer information. 
+	     This will be my public Website resume, that is designed in order to test my knowledge on different design concepts, accessibility
+         requirements, and how to implement responsive layouts. In this resume, I will put various amount of personal information requested by my instructor.   
+	   </p>
+	 <hr> 
+	</div>
+	 
+	 <div class="row">
+	 <main>
+	   <div class=" col-sm-6 col-md-8 col-lg-10" id="subjects"> 
+	   <h3> Education </h3>
+	    <ul>
+	        <li> Graduated from John.G.Diefenbaker high School.  
+		       
+            <li> Currently a full time student from Mount Royal University. 
+		 </ul>
+		 
+		 <figure>
+               <img class="sqaure" src="images/JohnGDiefenbaker.jpg" alt="highschool">		
+         <figcaption>John.G.Diefenbaker high school</figcaption>
+	     </figure>	
+
+         <figure>		 
+		       <img class="sqaure" src="images/mru.jpg" alt="uni"> 
+         <figcaption>Mount Royal University</figcaption>
+	     </figure>           
+                
+	   </div>
+	 
+	   <div class=" col-sm-6 col-md-8 col-lg-10"  id="subjects"> 
+	   <h3> Skills & Hobbies </h3>
+	   <ul> <h6> Skills </h6>
+	    <li> Skilled in writing java and HTML coding along with the basic knowledge of computer code building.  
+		<li> Skilled in the knowledge of various business studies such as Management, Human resources, Accounting and Marketing. 
+        <li> Skilled in various puzzling questions of math. 
+	   </ul>
+       <ul> <h6> Hobbies </h6>	
+	        <li> Long have I enjoyed Miniture painting as a hobby. I mainly painted monstrous alien creatures known as the tyranids in the brand known as Warhammer 40k.
+            <li> I have been recently taken a interest in reading cthulhu mythos; created by H.P.Lovecraft. It is one of the earlist sci-fi Horror series ever created. 			
+       </ul>
+       <picture>
+			 <img src="images/tyranid hive.jpg" alt="tyranids" /> 
+			 <figcaption>My painted collections.</figcaption>
+       </picture>
+       <picture>
+			 <img src="images/tyranid beast.jpg" alt="tyranids" /> 
+			 <figcaption>My largest models.</figcaption>
+       </picture>	   
+       <picture>
+		     <source srcset= "images/callofcthulhu.png" alt="call of cthulhu" media = "(max-width: 1000px) and (min-width: 701px)"/>
+			 <source srcset= "images/callofcthulhuS.png" alt="call of cthulhu" media = "(max-width: 700px) and (min-width: 500px)"/>
+			 <source srcset= "images/callofcthulhuSS.png" alt="call of cthulhu" media = "(max-width: 499px) and (min-width: 300px) "/>
+			 
+			 <img src="images/callofcthulhu.png" alt="call of cthulhu" /> 
+			 <figcaption>Here is a artwork of the story "Call of Cthulhu.</figcaption>
+        </picture>
+        
+	     
+	   </div>
+	   
+	   <div class=" col-sm-6 col-md-8 col-lg-10"  id="subjects" > 
+	   <h3> Courses Taken</h3>
+	     <ul> <h6>Computer courses </h6>
+		      <li> COMP 1103 Introduction to Computers.
+	          <li> COMP-1501-505 Programming I. 
+	          <li> COMP-1502-002 ProgrammingII Object Oriented.
+	          <li> COMP-2511-001 Web I: Client Development.
+	     </ul>
+		 <ul> <h6>Business courses </h6>
+		      <li> HRES 2170 Intro to Human Resources.
+			  <li> MGMT 3210 Business Communication.
+			  <li> MGMT 2130 Mgmt Principles & Practices.
+			  <li> MKTG 2150 Introduction to Marketing.
+			  <li> HRES 3274 Recruitment and Selection.
+			  <li> MGMT 3230 Business Law.
+		 </ul>
+		 <ul> <h6>Math courses </h6>
+		      <li> MATH 1505 Puzzling Adventures in Math.
+		  </ul>
+	   </div>
+	   
+	   <div class="  col-sm-6 col-md-8 col-lg-10"  id="subjects"> 
+	   <h3> Achievements </h3>
+	   <ul> <h6>Computer Achievements </h6>
+	        <li>
+			<li>
+			
+	   </ul>
+	   </div>
+	   
+	   <div class="  col-sm-6 col-md-8 col-lg-10"  id="subjects"> 
+	   <h3> Projects Completed</h3>
+	   <ul> <h6>Computer Projects </h6>
+	        <li>
+			<li>
+			<li>
+			<li>
+	   </ul>
+	    <ul> <h6>Business Projects </h6>
+		     <li>
+			 <li>
+			 <li>
+			 <li>
+			 <li>
+	   </ul>
+	   </div>
+	  
+	   </div>
+	  <div class="row">
+	   <h2> Work & Volunteer Experiences </h2>
+	   <hr> 
+	   <ul> <h6>Volunteer Experiences</h6>
+	        <li>
+	   </ul>
+	   <ul> <h6>Work Experiences</h6>
+	        <li>
+	   </ul>
+	 </div>
+  </div>
+	 
+	
+</body>
+	
+</html>

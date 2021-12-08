@@ -1,0 +1,40 @@
+
+.container{
+    
+    display:grid;
+    flex-wrap:wrap;
+}
+
+@media screen and (min-width:400px){
+
+    
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+
+}
+
+@media screen and (min-width:700px){
+
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+
+}
+@media screen and (min-width:1000px){
+    .container{
+        width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    
+  
+   
+}
