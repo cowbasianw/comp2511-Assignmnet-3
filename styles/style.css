@@ -2,18 +2,26 @@ h1, h2, h3, h4, h5, p, figcaption, img{
 	    text-align: center;
 		
 	   }
-	   p{
-		   font-style: Serif;
-		   font-size: 15px;
+	    p{
+		   font-family: "Times New Roman", Times, serif;
+		   font-size: 16px;
 	    }
+	    figcaption{
+			font-family: "Georgia", Times, serif;
+		    font-size: 18px;
+			margin: 10px 0px;
+		}
 		li {
-		   margin-left: 160px;
+		   font-family: "Georgia", Times, serif;
            list-style: disc; 
 		}
-		h6 {
-			margin-left: 140px;
+		input{
+			
 		}
+		
         img{
+		   max-width: 100%;
+           height: auto;
 		   display: grid;
            margin-left: auto;
            margin-right: auto;
@@ -46,12 +54,48 @@ h1, h2, h3, h4, h5, p, figcaption, img{
 			width: 120px;
 			text-align: center;
         }
-		
+		#userGuid {
+            background-color: bisque;
+            padding: 10px;
+            border-radius: 20px;
+            margin:5px 0px;
+        }
 	    #subjects{
 		
             margin-left: auto;
             margin-right: auto;
         }
+		#Experiences{
+			width: 80%;
+			margin-left: auto;
+            margin-right: auto;
+		}
+		#footer{
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+		 
+		#p2{
+		   margin-left: 40px;
+		   text-align: left;	
+		}
+
+		.submit{
+            display: inline;
+            text-align: left;
+			
+        } 
+		.contact{
+			margin-right:400px;
+			text-align: right;
+		}
+		.message{
+			margin-right:400px;
+			text-align: right;
+			height: 100px;
+		}
+		
         @media screen and (min-width:1000px){
         .container{
 			
@@ -63,11 +107,19 @@ h1, h2, h3, h4, h5, p, figcaption, img{
 		#schools{
             display: grid; 
             grid-template-columns: repeat(2, 1fr); 
+			grid-gap:15px;
 		
 	    }
+		li {
+		   margin-left: 160px;
+           list-style: disc; 
+		}
+		h6 {
+			margin-left: 140px;
+		}
 	}
 		
-	 @media screen and (min-width:400px){
+	 @media screen and (min-width:600px){
         .container{
             
             margin-left: auto;
@@ -80,5 +132,6 @@ h1, h2, h3, h4, h5, p, figcaption, img{
             color:white;
 			
         }		
+		
 		
 	  }
