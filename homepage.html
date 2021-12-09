@@ -4,85 +4,36 @@
        <meta charset="utf-8">
        <title >Assignment 3</title>
        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	   <!-- minified CSS -->
+	   <link rel="stylesheet" href="styles/reset.css">
+	   <link rel="stylesheet" href="styles/style.css">
 	   
        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	</head>
-    <style>
-	   h1, h2, h3, h4, h5, p, figcaption{
-	    text-align: center;
-	   }
-	   img {
-            display: grid;
-            margin-left: auto;
-            margin-right: auto;
-        }
-		.rounded-circle{
-            width: 150px;
-            height: 150px;
-            padding: 15px;
-        }
-      .sqaure{
-            width: 350px;
-            height: 150px;
-           
-        }
-		#option{
-		    display: flex;
-			flex-direction: row;
-			
-		}
-		.menu{
-            border-radius: 45px;
-            background-color: orange;
-            color:white;
-        }
-		#subjects{
-		
-            margin-left: auto;
-            margin-right: auto;
-        }
-     @media screen and (min-width:1000px){
-        .container{
-            width: 900px;
-            margin-left: auto;
-            margin-right: auto;
-        
-        }
-		
-	  }
-	 @media screen and (min-width:400px){
-        .container{
-            
-            margin-left: auto;
-            margin-right: auto;
-        
-        }	
-		
-	  }
-		
-    </style>
+    
 	 
 	<body>
 	<div class="container">
 	   
-	 <header>
+	 
 	 <div class="row">
 	 <nav class="box option" id="option"> 
 		
-	    <div class="menu"><a href="main.html">    Intro </a></div>
+	    <div class="menu"><a href="main.html">    Introduction </a></div>
 	    <div class="menu"><a href="selling.html"> Education </a></div> 
-	    <div class="menu"><a href="buying.html">  Skills  </a></div> 
+	    <div class="menu"><a href="buying.html">  Skills & Hobby  </a></div> 
         <div class="menu"><a href="contact.html"> Courses  </a></div> 
-	    <div class="menu"><a href="about.html">  Work  </a></div> 
-	   </nav>
+	    <div class="menu"><a href="about.html">  Achievements  </a></div> 
+		<div class="menu"><a href="about.html">  Work  </a></div> 
+		<div class="menu"><a href="about.html">  contact  </a></div> 
+	  </nav>
 	 <h1>[ Shawn Tian ]</h1>
 	 
      <p> | 225 panatella Sq NW | Calgary, AB | 587-968-6298 | xtian648@mtroyal.ca | </p>
-     <hr> 
-	  <div class=" col-sm-3 col-md-3 col-lg-3" > <img class="rounded-circle" src="images/kumamon-2.jpg" alt="proflie"> </div>
-      <div class=" col-sm-3 col-md-3 col-lg-3"> <img class="rounded-circle"  src="images/RWibk.jpg" alt="zoo"> </div>
-	 
+      <hr>
+	  <div class=" col-sm-3 col-md-3 col-lg-3" > <img class="rounded-circle" src="images/kumamon-2.jpg" alt="proflie">  <figcaption>My MRU proflie picture</figcaption> </div>
+      <div class=" col-sm-3 col-md-3 col-lg-3"> <img class="rounded-circle"  src="images/RWibk.jpg" alt="peronal"> <figcaption>My personal proflie picture</figcaption></div>
+	  <div class=" col-sm-3 col-md-3 col-lg-3"> <img class="rounded-circle"  src="images/me.png" alt="myself"><figcaption>My picture</figcaption> </div>
+	  <hr>
 	 <h2> Introduction </h2>
 	   <p> 
 	     Greetings everyone, my name is Shawn Tian, A student from Mount Royal University currently studying the bachelor of computer information. 
@@ -96,24 +47,28 @@
 	 <main>
 	   <div class=" col-sm-6 col-md-8 col-lg-10" id="subjects"> 
 	   <h3> Education </h3>
-	    <ul>
+	    <ul>  <h6> Schools </h6>
 	        <li> Graduated from John.G.Diefenbaker high School.  
 		       
             <li> Currently a full time student from Mount Royal University. 
-		 </ul>
-		 
+		    </ul>
+		 <section class ="box items" id="schools">	
+	     <div class="items" id="item1">
 		 <figure>
                <img class="sqaure" src="images/JohnGDiefenbaker.jpg" alt="highschool">		
          <figcaption>John.G.Diefenbaker high school</figcaption>
 	     </figure>	
-
+         </div>
+		 
+		 <div class="items" id="item2">
          <figure>		 
 		       <img class="sqaure" src="images/mru.jpg" alt="uni"> 
          <figcaption>Mount Royal University</figcaption>
 	     </figure>           
-                
+          </div>
 	   </div>
-	 
+	   </div>
+	   <hr> 
 	   <div class=" col-sm-6 col-md-8 col-lg-10"  id="subjects"> 
 	   <h3> Skills & Hobbies </h3>
 	   <ul> <h6> Skills </h6>
@@ -125,14 +80,26 @@
 	        <li> Long have I enjoyed Miniture painting as a hobby. I mainly painted monstrous alien creatures known as the tyranids in the brand known as Warhammer 40k.
             <li> I have been recently taken a interest in reading cthulhu mythos; created by H.P.Lovecraft. It is one of the earlist sci-fi Horror series ever created. 			
        </ul>
-       <picture>
+	    <section class ="box items" id="hobby">
+		 <div class="items" id="item1">
+         <picture>
+		     <source srcset= "images/tyranid hive.jpg" alt="tyranids" media = "(max-width: 1000px) and (min-width: 701px)"/>
+			 <source srcset= "images/tyranid hiveS.jpg" alt="tyranids" media = "(max-width: 700px) and (min-width: 500px) "/>
+			 
 			 <img src="images/tyranid hive.jpg" alt="tyranids" /> 
 			 <figcaption>My painted collections.</figcaption>
-       </picture>
-       <picture>
+         </picture>
+		 </div>
+		 <div class="items" id="item2">
+         <picture>
+		     <source srcset= "images/tyranid beast.jpg" alt="tyranids" media = "(max-width: 1000px) and (min-width: 701px)"/>
+			 <source srcset= "images/tyranid beastS.jpg" alt="tyranids" media = "(max-width: 700px) and (min-width: 500px) "/>
+			 
 			 <img src="images/tyranid beast.jpg" alt="tyranids" /> 
 			 <figcaption>My largest models.</figcaption>
-       </picture>	   
+       </picture>
+       </div>
+         
        <picture>
 		     <source srcset= "images/callofcthulhu.png" alt="call of cthulhu" media = "(max-width: 1000px) and (min-width: 701px)"/>
 			 <source srcset= "images/callofcthulhuS.png" alt="call of cthulhu" media = "(max-width: 700px) and (min-width: 500px)"/>
@@ -144,12 +111,12 @@
         
 	     
 	   </div>
-	   
+	   <hr> 
 	   <div class=" col-sm-6 col-md-8 col-lg-10"  id="subjects" > 
 	   <h3> Courses Taken</h3>
 	     <ul> <h6>Computer courses </h6>
 		      <li> COMP 1103 Introduction to Computers.
-	          <li> COMP-1501-505 Programming I. 
+	          <li> COMP-1501-002 Programming I. 
 	          <li> COMP-1502-002 ProgrammingII Object Oriented.
 	          <li> COMP-2511-001 Web I: Client Development.
 	     </ul>
@@ -169,8 +136,8 @@
 	   <div class="  col-sm-6 col-md-8 col-lg-10"  id="subjects"> 
 	   <h3> Achievements </h3>
 	   <ul> <h6>Computer Achievements </h6>
-	        <li>
-			<li>
+	        <li> Passed COMP-1502-002 with a grade of A.
+			<li> Passed COMP-1103 with a grade of A.
 			
 	   </ul>
 	   </div>
@@ -178,21 +145,22 @@
 	   <div class="  col-sm-6 col-md-8 col-lg-10"  id="subjects"> 
 	   <h3> Projects Completed</h3>
 	   <ul> <h6>Computer Projects </h6>
-	        <li>
-			<li>
-			<li>
-			<li>
+	        <li> 5 major COMP-1501-002 projects.
+			<li> 3 major COMP-1502-002 projects.
+			<li> 3 major COMP 1103 projects.
+			<li> 3 major COMP-2511-001 projects.
 	   </ul>
 	    <ul> <h6>Business Projects </h6>
-		     <li>
-			 <li>
-			 <li>
-			 <li>
-			 <li>
+		     <li> 1 major HRES 2170 project. 
+			 <li> 1 major HRES 2170 project. 
+			 <li> 2 major MGMT 2130 projects.
+			 <li> 3 major MKTG 2150 projects.
+			 <li> 2 major HRES 3274 projects.
+			 <li> 1 major MGMT 3230 project.
 	   </ul>
 	   </div>
 	  
-	   </div>
+	   
 	  <div class="row">
 	   <h2> Work & Volunteer Experiences </h2>
 	   <hr> 
@@ -203,6 +171,21 @@
 	        <li>
 	   </ul>
 	 </div>
+	  
+	   <fieldset>
+	    <legend> <h3>Contact Us</h3></legend>
+	 
+	 
+	   <div class ="box footer" id="footer">	
+       <footer>
+	    <div class="foot" id="contact"><label> Full Name: </label><input type="text"></div> <br>
+    	<div class="foot" id="contact"><label> Email: </label> <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="example@something.com" ></div><br>
+	    <div class="foot" id="contact"><label> Message: </label><input type="text" size="20"></div><br>
+	    <div class="submit" id="contact"><input type="submit"></div>
+	    <div class="submit" id="contact"><input type="reset"></div>
+	   </fieldset> 
+	   </div>
+	  
   </div>
 	 
 	
